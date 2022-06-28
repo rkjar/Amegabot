@@ -1,1 +1,1 @@
-from .media_album import AlbumMiddleWare
+from .media_album_middleware import AlbumMiddleWare
