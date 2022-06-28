@@ -17,10 +17,6 @@ async def doc_handler(message: types.Message):
             await message.document.download(
                 destination_file=Path(file_path, get_new_file_name(message.document.file_name))
             )
-        await bot.send_message(
-            text='Получил документ',
-            chat_id=message.from_user.id
-        )
     except FileIsTooBig:
         await bot.send_message(
             text='Я временно не могу сохранять документы более <b>20МБ</b>',
