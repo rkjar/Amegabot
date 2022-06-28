@@ -1,8 +1,6 @@
 import asyncio
 from aiogram import types
-from aiogram.dispatcher import FSMContext
-from aiogram.dispatcher.filters.state import State, StatesGroup
-from loader import dp, bot, FSMUserInteraction
+from loader import dp, bot
 from utils import get_photo_name, get_new_file_name
 from pathlib import Path
 from aiogram.utils.exceptions import FileIsTooBig
